@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  height: 100%;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app {
+  
+  background: url('https://images.unsplash.com/photo-1501973801540-537f08ccae7e?auto=format&fit=crop&w=1600&q=80') no-repeat center center fixed;
+  background-size: cover;
+  
+
+
+  background: linear-gradient(135deg, #6dd5ed, #2193b0);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.weather-container {
+  
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(14px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+
+
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 40px 30px;
+  text-align: center;
+  color: white;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+}
+
+.title {
+  font-size: 28px;
+  margin-bottom: 20px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  gap: 10px;
+}
+
+.search-bar input {
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: none;
+  width: 60%;
+}
+
+.search-bar button {
+  padding: 10px 15px;
+  font-size: 16px;
+  background-color: #ffffffbb;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.search-bar button:hover {
+  background-color: white;
+  transform: scale(1.05);
+}
+
+.weather-card {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 20px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.weather-card h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.weather-card p {
+  font-size: 16px;
+  margin: 5px 0;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.icon {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: #ffcccc;
+  font-size: 16px;
+  margin-top: 15px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.weather-card {
+  animation: fadeInUp 0.6s ease;
+}
